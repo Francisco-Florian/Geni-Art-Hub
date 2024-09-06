@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TITRE DE L'OEUVRE - GeniArtHub</title>
+</head>
+<body class="page">
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="img/logo-black.png" alt="Logo GeniArtHub version sombre">
+            </a>
+            <a id="cartIcon" href="panier.html"><img src="img/cart.svg" alt="Aller au panier"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="panier">
+            <h2>Votre panier</h2>
+            <hr>
+            <article>
+                <div class="produit">
+                    <p id="vide"></p>
+                </div>
+                <h3 class="total">Totale de la commande</h3>
+                <p class="prix-total"></p>
+            </article>
+            <hr>
+        </section>
+        <section class="formPanier">
+            <h2>Formulaire de commande</h2>
+            <hr>
+            <article>
+                <form  class="formCommande" action="#" method="post">         
+                        <div class="divFormCommande">
+                            <label for="prenom">Prénom:</label>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+                        <div class="divFormCommande">
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+                        <div class="divFormCommande">
+                            <label for="adresse">Adresse:</label>
+                            <input type="text" id="adresse" name="adresse">
+                        </div>
+                        <div class="divFormCommande">
+                            <label for="ville">Ville:</label>
+                            <input type="text" id="ville" name="ville">
+                        </div>
+                        <div class="divFormCommande">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <input id="sub" type="submit" value="Passer commande">
+                        </div>
+                        
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://www.errantecreation.com/">Errante Creation</a> © 2023 - GeniArtHub</p>
+    </footer>
+    
+    <script src="js/order.js"></script>
+</body>
+</html>
